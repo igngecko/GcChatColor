@@ -1,0 +1,77 @@
+# Define available chat colors for GcChatColor
+#
+# Format:
+# <unique_color_id>:
+#   name: "Display Name"          # Name shown in GUI and messages
+#   hex: "#RRGGBB"                # The hex color code (e.g., "#FF5733") OR a legacy code (e.g., "&c")
+#   permission: "gcchatcolor.color.<unique_color_id>" # Permission node required to use this color
+#   gui-item:
+#     material: "MATERIAL_NAME"   # Material for the item in the GUI (e.g., RED_WOOL)
+#     # Optional: custom-model-data: 12345
+#     # Optional: amount: 1 (defaults to 1)
+
+# It's recommended to keep <unique_color_id> simple and lowercase (e.g., 'red', 'light_blue', 'sunset_orange')
+
+colors:
+  red:
+    name: "Red"
+    hex: "&c" # Legacy code example
+    permission: "gcchatcolor.color.red"
+    gui-item:
+      material: "RED_WOOL"
+  light_blue:
+    name: "Light Blue"
+    hex: "#ADD8E6" # Hex code example
+    permission: "gcchatcolor.color.lightblue" # Note: permission node should avoid spaces/special chars
+    gui-item:
+      material: "LIGHT_BLUE_STAINED_GLASS_PANE"
+  gold:
+    name: "Gold"
+    hex: "&6"
+    permission: "gcchatcolor.color.gold"
+    gui-item:
+      material: "GOLD_BLOCK"
+  lime:
+    name: "Lime Green"
+    hex: "#32CD32"
+    permission: "gcchatcolor.color.lime"
+    gui-item:
+      material: "LIME_DYE"
+  pink:
+    name: "Pink"
+    hex: "&d"
+    permission: "gcchatcolor.color.pink"
+    gui-item:
+      material: "PINK_TULIP"
+  purple:
+    name: "Purple"
+    hex: "#8A2BE2"
+    permission: "gcchatcolor.color.purple"
+    gui-item:
+      material: "PURPLE_WOOL"
+  aqua:
+    name: "Aqua"
+    hex: "&b"
+    permission: "gcchatcolor.color.aqua"
+    gui-item:
+      material: "DIAMOND"
+  white:
+    name: "White"
+    hex: "&f"
+    permission: "gcchatcolor.color.white"
+    gui-item:
+      material: "WHITE_WOOL"
+  dark_green:
+      name: "Dark Green"
+      hex: "&2"
+      permission: "gcchatcolor.color.darkgreen"
+      gui-item:
+        material: "GREEN_WOOL"
+  rainbow: # Special Example - Not a real hex, maybe handle differently later if needed
+      name: "&cR&ea&ai&bn&9b&do&cw" # Example of a multi-color name
+      hex: "#RAINBOW" # Use a placeholder, actual rainbow effect needs custom chat handling logic
+      permission: "gcchatcolor.color.rainbow"
+      gui-item:
+        material: "BEACON" # Example item
+
+# Add more colors here following the same format.
